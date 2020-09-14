@@ -1182,6 +1182,34 @@ h1, h2, h3, h4, h5,
   border-color: #352961 !important;
   color: #fff; }
 
+
+.box-wrap .toggle {
+    border-width: 2px;
+    width: 100%;
+}
+
+.box-wrap.box-open .toggle:after {
+    content: "Close Other Versions"
+}
+
+.box-wrap.box-close .toggle:after {
+    content: "Show Other Versions"
+}
+
+.box {
+    transition: opacity 1s, max-height 0.5s ease;
+    overflow: hidden;
+    padding: 0 0px 0px 0px;
+}
+
+.box-close .box {
+    max-height: 0px;
+}
+
+.box-open .box {
+    max-height: 727px;
+}
+
 /*PRELOADING------------ */
 #overlayer {
   width: 100%;
