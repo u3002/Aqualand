@@ -1209,6 +1209,33 @@ h1, h2, h3, h4, h5,
 .box-open .box {
     max-height: 727px;
 }
+.footer-images {
+    width: 52px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    transform: scale(1);
+    transition: transform 0.25s ease 0s;
+}
+
+    .footer-images:hover {
+        opacity: 0.9;
+        transform: scale(1.25);
+    }
+
+.footer-images1 {
+    width: 65px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    transform: scale(1);
+    transition: transform 0.25s ease 0s;
+}
+
+    .footer-images1:hover {
+        opacity: 0.9;
+        transform: scale(1.25);
+    }
 
 /*PRELOADING------------ */
 #overlayer {
