@@ -2,35 +2,35 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #CFCFCF;
+      fill: #CFCFCF;
       }
 
       .cls-2 {
-        fill: #F0F0F0;
+      fill: #F0F0F0;
       }
 
       .cls-3 {
-        fill: #e0e0e0;
+      fill: #e0e0e0;
       }
 
       .cls-4 {
-        fill: #749AA1;
+      fill: #ea868f;
       }
 
       .cls-5 {
-        fill: #92B8BE;
+      fill: #f1aeb5;
       }
 
       .cls-6 {
-        fill: #fff;
+      fill: #fff;
       }
 
       .cls-7 {
-        fill: #1B1F23;
+      fill: #6f42c1;
       }
 
       .cls-8 {
-        fill: #ccc;
+      fill: #ccc;
       }
     </style>
   </defs>
