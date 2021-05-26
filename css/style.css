@@ -1092,8 +1092,13 @@ h1, h2, h3, h4, h5,
     text-align: center; } }
 
 .pricing-wrap {
-  padding-bottom: 7rem;
-  padding-top: 7rem; }
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+    background-image: url('../images/pricing-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
   @media (max-width: 1199.98px) {
     .pricing-wrap {
       padding-bottom: 7em; } }
