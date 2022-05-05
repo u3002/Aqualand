@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
     <title>AqualandWiki</title>
-
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
@@ -16,6 +15,7 @@
     <script>
         window.$docsify = {
             alias: {
+                '/.*/_navbar.md': '/_navbar.md',
                 '/(.*)':
                     'https://raw.githubusercontent.com/aqland/wiki/main/$1',
                 '/zh-hk/(.*)':
