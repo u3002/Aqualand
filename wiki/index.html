@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
     <title>AqualandWiki</title>
-    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
     <div id="app"></div>
@@ -46,10 +45,27 @@
             subMaxLevel: 2,
             themeColor: '#6c9fee',
             plugins: [
-                EditOnGithubPlugin.create(
-                    'https://github.com/aqland/wiki/blob/main/'
-                ),
-            ]
+                function (hook, vm) {
+                    hook.beforeEach(function (html) {
+                        if (/githubusercontent\.com/.test(vm.route.file)) {
+                            url = vm.route.file
+                                .replace('raw.githubusercontent.com', 'github.com')
+                                .replace(/\/main/, '/blob/main');
+                        } else {
+                            url =
+                                'https://github.com/aqland/wiki/blob/main/' +
+                                vm.route.file;
+                        }
+                        var editHtml = '[:memo: Edit Document](' + url + ')\n';
+                        return (
+                            editHtml +
+                            html +
+                            '\n\n----\n\n' +
+                            '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
+                        );
+                    })
+                },
+            ],
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
